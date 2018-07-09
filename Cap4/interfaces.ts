@@ -28,3 +28,4 @@ let equipo1: Equipo = {
     marca: 'Asus',
     // precioEuros: 1000
 }
+
