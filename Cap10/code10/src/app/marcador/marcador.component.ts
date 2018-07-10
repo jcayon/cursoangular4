@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MarcadorComponent implements OnInit {
 
-  jugadores: object[] = [
+  jugadores: any[] = [
     { nombre: 'Isaiah Thomas', puntos: 0, imagen: 'assets/img/thomas.png' },
     { nombre: 'Kyle Kuzma', puntos: 0, imagen: 'assets/img/kuzma.png' },
     { nombre: 'Julius Randle', puntos: 0, imagen: 'assets/img/randle.png' },
@@ -23,6 +23,11 @@ export class MarcadorComponent implements OnInit {
 
   getCanasta(event) {
     this.puntosEquipo += event.puntos;
+    this.jugadores.forEach(jugador => {
+      if(jugador.nombre === event.nombre) {
+        jugador.puntos += event.puntos;
+      }
+    });
   }
 
 }

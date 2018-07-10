@@ -23,7 +23,7 @@ body {
 }
 
 .contenedor table {
-    width: 50px;
+    width: 50%;
     min-width: 300px;
     padding: 20px;
 }
@@ -42,4 +42,28 @@ tr:nth-child(odd) {
 
 td {
     height: 80px;
+}
+
+img {
+    height: 60px;
+}
+
+button {
+    font-size: 16px;
+    color: #552583;
+    background-color: white;
+    padding: 8px;
+    border-radius: 4px;
+    border: solid 2px #552583;
+    margin: 5px;
+}
+
+td:nth-child(1){
+    padding-left: 10px;
+}
+
+td:nth-child(2) {
+    width: 1px;
+    white-space: nowrap;
+    padding: 10px;
 }

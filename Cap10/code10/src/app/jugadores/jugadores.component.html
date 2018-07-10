@@ -9,4 +9,15 @@
       </td>
     </tr>
   </table>
+  <table>
+    <tr *ngFor="let jugador of jugadores | orderBy : 'puntos'">
+      <td>
+        <img [src]="jugador.imagen">
+        {{jugador.nombre}}
+      </td>
+      <td>
+        {{jugador.puntos}}
+      </td>
+    </tr>
+  </table>
 </div>

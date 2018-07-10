@@ -17,5 +17,8 @@ export class JugadoresComponent implements OnInit {
 
   setCanasta(puntos, nombre) {
     this.canasta.emit({puntos, nombre});
+    this.jugadores.sort((jugador1, jugador2) => {
+      return (jugador2.puntos - jugador1.puntos);
+    });
   }
 }
