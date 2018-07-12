@@ -1,0 +1,86 @@
+<table>
+  <tr>
+    <td>Titulo</td>
+    <td>Valor con texto</td>
+    <td>Opción</td>
+    <td>Valor con pipe</td>
+  </tr>
+  <tr>
+    <td>Lowercase</td>
+    <td>{{texto}}</td>
+    <td></td>
+    <td>{{texto | lowercase}}</td>
+  </tr>
+  <tr>
+    <td>Uppercase</td>
+    <td>{{texto}}</td>
+    <td></td>
+    <td>{{texto | uppercase}}</td>
+  </tr>
+  <tr>
+    <td>Titlecase</td>
+    <td>{{texto}}</td>
+    <td></td>
+    <td>{{texto | titlecase}}</td>
+  </tr>
+  <tr>
+    <td>Titlecase</td>
+    <td>{{texto}}</td>
+    <td></td>
+    <td>{{texto | titlecase}}</td>
+  </tr>
+  <tr>
+    <td>Slice</td>
+    <td>{{id}}</td>
+    <td>-3</td>
+    <td>{{id | slice:-3}}</td>
+  </tr>
+  <tr>
+    <td>Date</td>
+    <td>{{fecha}}</td>
+    <td>dd/MM/yyyy HH:MM</td>
+    <td>{{fecha | date: "dd/MM/yyyy HH:MM"}}</td>
+  </tr>
+  <tr>
+    <td>Date</td>
+    <td>{{fecha}}</td>
+    <td>long</td>
+    <td>{{fecha | date: "long"}}</td>
+  </tr>
+  <tr>
+    <td>Decimal</td>
+    <td>{{importe}}</td>
+    <td>4.2-2</td>
+    <td>{{importe | number: '4.2-2'}}</td>
+  </tr>
+  <tr>
+    <td>Percent</td>
+    <td>{{aciertos}}</td>
+    <td>2.2-2</td>
+    <td>{{aciertos | percent: '2.2-2'}}</td>
+  </tr>
+  <tr>
+    <td>Currency</td>
+    <td>{{importe}}</td>
+    <td>2.2-2</td>
+    <td>{{importe | currency: 'EUR': true}}</td>
+  </tr>
+  <tr>
+    <td>JSON</td>
+    <td>{{jugador}}</td>
+    <td></td>
+    <td><pre>{{jugador | json}}</pre></td>
+  </tr>
+  <tr>
+    <td>Pipe propio</td>
+    <td>{{cantidad}}</td>
+    <td>4</td>
+    <td>{{cantidad | numeros: 4}}</td>
+  </tr>
+  <tr>
+    <td>Pipe propio 2</td>
+    <td>{{cantidad}}</td>
+    <td>6 y '€'</td>
+    <td>{{cantidad | numeros: 4: '€'}}</td>
+  </tr>
+</table> 

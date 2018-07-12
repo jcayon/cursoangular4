@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #646464;
+}
+
+header {
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 2px grey;
+}
+
+header div {
+    font-size: 30px;
+}
+
+header a {
+    font-size: 20px;
+    text-decoration: none;
+    margin: 5px;
+    color: #646464;
+}
+
+header a:hover {
+    color: orangered;
+}
+
+.active {
+    color: orangered;
+}
+
+.contenedor {
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.contenedor.mostrado {
+    opacity: 1;
+}
+
+table {
+    width: 100%;
+    padding: 20px;
+}
+
+tr:nth-child(odd) td {
+    background-color: coral;
+    font-size: 20px;
+    padding: 10px;
+}
+
+tr:nth-child(even) td {
+    background-color: rgb(248, 170, 142);
+    font-size: 20px;
+    padding: 10px;
+}
