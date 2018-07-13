@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CrearClienteComponent implements OnInit {
 
+  cliente:any;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  crearCliente(formCliente) {
+    this.cliente = {
+      nombre: formCliente.controls.nombre.value,
+      cif: formCliente.controls.cif.value,
+      email: formCliente.controls.email.value,
+      createdAt: new Date()
+    };
   }
 
 }

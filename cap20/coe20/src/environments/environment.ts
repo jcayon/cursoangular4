@@ -3,8 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  urlFactura: 'http://localhost:3000/factura'
+  production: false
 };
 
 /*
